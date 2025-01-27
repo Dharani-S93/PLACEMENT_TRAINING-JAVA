@@ -316,7 +316,79 @@ OUTPUT
  HelloDharu21-FALSE
 ````
 
-# 
+# MINI PROJECT ON STRINGS
+# Question: Write a Java program that implements a simple login system. The system should prompt the user to input a username and password. If the entered credentials match a predefined username and password (Dharu93 and Dharu@90), it should display "Login Success". If the credentials don't match, it should display "Invalid Username or Password". The program should also use the following string methods:
+# trim() - To remove any leading or trailing spaces from the entered credentials.
+# equals() - To check if the entered username and password exactly match the predefined ones.
+# equalsIgnoreCase() - To allow case-insensitive comparison of the credentials.
+````
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        String u_name = "Dharu";
+        String u_pw = "Dharuu90";
+        Scanner s = new Scanner(System.in);
+        String ip_name = s.next().trim(); 
+        String ip_pw = s.next().trim();   
+        System.out.println("Trimmed Username: " + ip_name);
+        System.out.println("Trimmed Password: " + ip_pw);
+
+        if (u_name.equals(ip_name) && u_pw.equals(ip_pw)) {
+            System.out.println("Login Success");
+        } else {
+            System.out.println("Invalid Username or Password");
+        }
+    }
+}
+OUTPUT
+1)           Dharu
+Dharuu90     
+Trimmed Username: Dharu
+Trimmed Password: Dharuu90
+Login Success
+2) dHaruu
+Dharuu98787
+Trimmed Username: dHaruu
+Trimmed Password: Dharuu98787
+Invalid Username or Password
+
+`````
+# MINI PROJECT-2
+# Question: Consider a simple text editor that allows you to find and replace words in a given text. You have an input sentence:
+# "Java Basic Intro for 2 lines"
+# Your task is to perform the following operations:
+# Use the replace() method to replace every occurrence of the word "Java" with "Strings".
+# Use the replaceAll() method to replace the phrase "Java Basic" with "Strings Basic".
+# Use the matches() method to check if the word "Java" is present in the sentence. If it is present, print a message saying "Java is found in the text", otherwise print "Java is not found in the text".
+
+````
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        String s = "Java is a programming language. Java is platform independent. Java is very easy.";
+        
+        System.out.println("INPUT TEXT:"  +s);
+        String r_s = s.replace("Java", "Strings");
+        System.out.println("THE REPLACED TEXT IS : " + r_s);
+
+        String r_a = s.replaceAll("Java is", "Strings are");
+        System.out.println("THE REPLACEDALL TEXT IS: " + r_a);
+        if (s.matches(".*Java.*")) {
+            System.out.println("TRUE,Java present in the text.");
+        } else {
+            System.out.println("Java not present in the text.");
+        }
+    }
+}
+
+OUTPUT
+INPUT TEXT:Java is a programming language. Java is platform independent. Java is very easy.
+THE REPLACED TEXT IS : Strings is a programming language. Strings is platform independent. Strings is very easy.
+THE REPLACEDALL TEXT IS: Strings are a programming language. Strings are platform independent. Strings are very easy.
+TRUE,Java present in the text.
+````
+
+
 
 
 
