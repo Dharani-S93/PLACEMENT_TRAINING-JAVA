@@ -9,4 +9,6 @@ public class Main {
         System.out.println("Print the statement: " + s1 + " " + s2);
     }
 }
+OUTPUT
+Print the statement: Hello Dharu
 ````
