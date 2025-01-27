@@ -152,7 +152,75 @@ Print the statement: Haelo Dee
 ````
 
 
-# 
+# split()
+````[JAVA]
+public class Main {
+    public static void main(String[] args) {
+        String s1 = "Hello World";
+        System.out.println("Print the statement: " + s1.substring(6));
+    }
+}
+OUTPUT
+Print the statement: World
+````
+
+# Trim in Java
+````[JAVA]
+public class Main {
+    public static void main(String[] args) {
+        String s1 = "  Hello World  ";
+        System.out.println("Print the statement: " + s1.trim());
+    }
+}
+OUTPUT
+Print the statement: Hello World
+````
+
+# Split in Java
+````[JAVA]
+public class Main {
+    public static void main(String[] args) {
+        String s1 = "Hello World";
+        String[] words = s1.split(" ");
+        System.out.println("Print the statement: " + words[0] + " " + words[1]);
+    }
+}
+OUTPUT
+Print the statement: Hello World
+````
+
+
+# valueOf() in Java
+````[JAVA]
+public class Main {
+    public static void main(String[] args) {
+        int num = 123;
+        String s1 = String.valueOf(num);
+        System.out.println("Print the statement: " + s1);
+    }
+}
+OUTPUT
+Print the statement: 123
+````
+
+# matches() in Java
+public class Main {
+    public static void main(String[] args) {
+        String s1 = "Hello World";
+        System.out.println("Print the statement: " + s1.matches(".*World.*"));
+    }
+}
+OUTPUT
+Print the statement: true
+````
+
+
+
+
+
+
+
+
 
 
 
