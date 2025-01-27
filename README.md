@@ -51,3 +51,104 @@ public class Main {
 OUTPUT
 Print the statement: HELLO
 ````
+
+# Lowercase Conversion
+````[JAVA]
+public class Main {
+    public static void main(String[] args) {
+        String s1 = "Hello";
+        System.out.println("Print the statement: " + s1.toLowerCase());
+    }
+}
+OUTPUT
+Print the statement: hello
+````
+
+# indexOf() in Java
+````[JAVA]
+public class Main {
+    public static void main(String[] args) {
+        String s1 = "Hello";
+        System.out.println("Print the statement: " + s1.indexOf('e'));
+    }
+}
+OUTPUT
+Print the statement: 1
+````
+
+# lastIndexOf() in Java
+````[JAVA]
+public class Main {
+    public static void main(String[] args) {
+        String s1 = "Hello";
+        System.out.println("Print the statement: " + s1.lastIndexOf('o'));
+    }
+}
+OUTPUT
+Print the statement: 4
+````
+
+# startsWith() in Java
+````[JAVA]
+public class Main {
+    public static void main(String[] args) {
+        String s1 = "Hello DHARUU";
+        System.out.println("Print the statement: " + s1.startsWith("Hello"));
+    }
+}
+OUTPUT
+Print the statement: true
+````
+
+# endsWith() in Java
+````[JAVA]
+public class Main {
+    public static void main(String[] args) {
+        String s1 = "Hello DHARUU";
+        System.out.println("Print the statement: " + s1.endsWith("Hello"));
+    }
+}
+OUTPUT
+Print the statement: false
+````
+
+# Substring
+````[JAVA]
+public class Main {
+    public static void main(String[] args) {
+        String s1 = "Hello DHARUU";
+        System.out.println("Print the statement: " + s1.substring(3));
+    }
+}
+OUTPUT
+Print the statement: lo DHARUU
+````
+
+# Trim
+````[JAVA]
+public class Main {
+    public static void main(String[] args) {
+        String s1 = " Hello  dharuuu ";
+        System.out.println("Print the statement: " + s1.trim());
+    }
+}
+OUTPUT
+Print the statement: Hello  dharuuu
+````
+
+
+# Replace All
+````[JAVA]
+public class Main {
+    public static void main(String[] args) {
+        String s1 = "Hello Dee";
+        System.out.println("Print the statement: " + s1.replaceAll("el", "ae"));
+    }
+}
+OUTPUT
+Print the statement: Haelo Dee
+````
+
+
+
+
