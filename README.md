@@ -12,3 +12,16 @@ public class Main {
 OUTPUT
 Print the statement: Hello Dharu
 ````
+
+# Finding Length in Java
+````[JAVA]
+public class Main {
+    public static void main(String[] args) {
+        String s1 = "Hello";
+        int length = s1.length();
+        System.out.println("Print the statement: " + length);
+    }
+}
+OUTPUT
+Print the statement: 5
+````
