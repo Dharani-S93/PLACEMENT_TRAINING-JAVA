@@ -25,3 +25,29 @@ public class Main {
 OUTPUT
 Print the statement: 5
 ````
+
+
+# charAt() in Java
+````[JAVA]
+public class Main {
+    public static void main(String[] args) {
+        String s1 = "Hello";
+        char ch = s1.charAt(3);
+        System.out.println("Print the statement: " + ch);
+    }
+}
+OUTPUT
+Print the statement: l
+````
+
+# Uppercase Conversion
+````[JAVA]
+public class Main {
+    public static void main(String[] args) {
+        String s1 = "Hello";
+        System.out.println("Print the statement: " + s1.toUpperCase());
+    }
+}
+OUTPUT
+Print the statement: HELLO
+````
