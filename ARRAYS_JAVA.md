@@ -57,7 +57,7 @@ public class Main {
         }
         int target = s.nextInt();
 
-        for (int i = 1; i < a.length; i++) { // Fixed indexing error
+        for (int i = 1; i < a.length; i++) { 
             if (a[i] == target) {
                 found = true;
             }
@@ -272,6 +272,3 @@ public class Main {
 3
 ```
 
----
-
-Let me know if you spot any issues or need further tweaks!
