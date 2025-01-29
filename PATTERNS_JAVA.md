@@ -110,7 +110,7 @@ public class Main {
         }
     }
 }
-**Input:**
+Input:
 5
     *  
    * *  
