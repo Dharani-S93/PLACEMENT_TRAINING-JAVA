@@ -92,7 +92,7 @@ Input:
 ````
 
 
-# 4. Print Right-Aligned Triangle of Stars
+### 4. Print Right-Aligned Triangle of Stars
 ````[JAVA]
 import java.util.*;
 public class Main {
@@ -110,7 +110,7 @@ public class Main {
         }
     }
 }
-Input:
+**Input:**
 5
     *  
    * *  
