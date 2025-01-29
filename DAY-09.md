@@ -41,6 +41,16 @@ class LinkedList{
         newNode.next = head;
         head = newNode;
     }
+    public void insertAtPos(int pos, int data){
+        Node newNode = new Node(data);
+        Node temp=head;
+        for(int i=0;i<pos-1;i++){
+            temp=temp.next;
+            newNode.next=temp.next;
+            temp.next=newNode;
+        }
+        
+    }
 }
 
 
@@ -53,20 +63,9 @@ public class Main {
         link.display();
         System.out.println("INSERT AT BEGINNING");
         link.insertAtBegin(400);
+        link.insertAtPos(2,250);
         link.display();
     }
 }
-
-# OUTPUT
-100
-200
-300
-INSERT AT BEGINNING
-400
-100
-200
-300
-...
-
 ````[JAVA]
 
