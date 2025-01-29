@@ -1,8 +1,5 @@
-## LINKED LIST IN JAVA
 ## SINGLY LINKED LIST
-## INSERT AT BEGINING AND END
-
-# Code
+## CODE
 ````[JAVA]
 import java.util.*;
 // Create a class Node
@@ -15,7 +12,6 @@ class Node{
         this.next = null;
     }
 }
-
 // LinkedList class
 class LinkedList{
     Node head, tail;
@@ -46,14 +42,13 @@ class LinkedList{
         Node temp=head;
         for(int i=0;i<pos-1;i++){
             temp=temp.next;
+        }
             newNode.next=temp.next;
             temp.next=newNode;
-        }
         
     }
+    
 }
-
-
 public class Main {
     public static void main(String[] args) {
         LinkedList link = new LinkedList();
@@ -61,11 +56,19 @@ public class Main {
         link.insert(200);
         link.insert(300);
         link.display();
-        System.out.println("INSERT AT BEGINNING");
         link.insertAtBegin(400);
-        link.insertAtPos(2,250);
+        link.insertAtPos(1,250);
         link.display();
     }
 }
-````[JAVA]
 
+OUTPUT
+100
+200
+300
+400
+250
+100
+200
+300
+````
