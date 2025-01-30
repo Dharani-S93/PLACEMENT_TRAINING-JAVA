@@ -242,7 +242,20 @@ public class DLL{
 400
 
 
-
+### Reverse
+ public void  reverse() {
+    	 Node current=head;
+    	 Node next=null;
+    	 Node prev=null;
+    	 while(current!=null) {
+    		 next=current.next;
+    		 current.next=prev;
+    		 prev=current;
+    		 current=next;
+    		 
+    	 }
+    	 head=prev;
+     }
 
 
 
