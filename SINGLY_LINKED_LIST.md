@@ -47,8 +47,29 @@ class LinkedList{
             temp.next=newNode;
         
     }
-    
+public void deleteAtBegin(){
+        if(head !=null){                // Delete at Element Beginnig
+        head=head.next;
+      }
+    }
+    public void deleteAtEnd(){
+        Node temp=head;
+        while(temp.next.next!=null){        // Delete at End position
+            temp=temp.next;
+        }
+        temp.next=null;
+    }
+ public void DeleteSpecificPosition(int pos){
+        Node temp=head;                      
+        for(int i=0;i<pos;i++){
+            temp=temp.next;                      // Delete at speicifc Position
+        } 
+            head.next=temp.next;
+        
+            
+    }
 }
+
 public class Main {
     public static void main(String[] args) {
         LinkedList link = new LinkedList();
