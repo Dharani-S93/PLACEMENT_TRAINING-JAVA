@@ -1,4 +1,4 @@
-## QUEUE_ARRAY_IMPLEMENTATION
+## QUEUE-ARRAY_IMPLEMENTATION
 
 ````java
 package dharuu_Queue;
