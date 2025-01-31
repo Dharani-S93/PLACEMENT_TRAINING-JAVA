@@ -61,7 +61,8 @@ public class Main {
 ````
 ## OUTPUT
 400-------it is the top most element
-400----------these are the rest of elements after pop
+elements after pop
+400
 300
 200
 100
