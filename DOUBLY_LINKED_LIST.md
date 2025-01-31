@@ -243,6 +243,7 @@ public class DLL{
 
 
 ### Reverse
+````java
  public void  reverse() {
     	 Node current=head;
     	 Node next=null;
@@ -256,7 +257,7 @@ public class DLL{
     	 }
     	 head=prev;
      }
-
+````
 
 ### Search
 ````java
