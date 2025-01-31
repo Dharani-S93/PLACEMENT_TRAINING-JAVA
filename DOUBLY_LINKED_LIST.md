@@ -258,8 +258,73 @@ public class DLL{
      }
 
 
+### Search
+````java
+import java.util.*;
+public class Main 
+{
+    static class DLLNode 
+    {
+        int data;
+        DLLNode next;
+        DLLNode prev;
+        DLLNode(int data)
+        {
+            this.data = data;
+            this.next = null;
+            this.prev = null;
+        }
+    }
+    static class DoublyLinkedList 
+    {
+        static DLLNode head = null;
+        static DLLNode tail = null;
+        void create_node(int num)
+        {
+            DLLNode newnode =  new DLLNode(num);
+            if(head == null)
+            {
+                head = newnode;
+                tail = newnode;
+            }
+            else
+            {
+                tail.next = newnode;
+                newnode.prev = tail;
+                tail = newnode;
+            }
+        }
+        int search(int ele)
+        {
+          DLLNode temp=head;
+          while(temp.next!=null){
+          temp=temp.next;
+          if(temp.data==ele){
+            return 1;
+          }
+          }
+          return 0;
+    }
+    }
+    public static void main(String[] args) 
+    {
+        Scanner input = new Scanner(System.in);
+        DoublyLinkedList DLL = new DoublyLinkedList();
+        int num;
+        while(true)
+        {
+            num = input.nextInt();
+            if(num == -1) break;
+            DLL.create_node(num);
+        }
+        int ele = input.nextInt();
+        int res = DLL.search(ele);
+        System.out.printf("%s",res==1 ? "Element Found" : "Element Not Found");
+        input.close();
+    }
+}
 
-
+````
 
 
 
