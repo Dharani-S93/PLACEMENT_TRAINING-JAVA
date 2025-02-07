@@ -36,7 +36,7 @@ public class Main {
 ENTER THE SIZE
 5
 ENTER ELEMENTS
-1 9
+9
 5
 2
 7
