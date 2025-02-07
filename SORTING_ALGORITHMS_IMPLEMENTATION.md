@@ -31,5 +31,20 @@ public class Main {
 }
 ````
 
+### OUTPUT
+````
+ENTER THE SIZE
+5
+ENTER ELEMENTS
+1 9
+5
+2
+7
+1
+SORTED ARRAY
+1 2 5 7 9
+
+
+````
 
 
