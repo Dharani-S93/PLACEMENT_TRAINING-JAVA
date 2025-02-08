@@ -44,7 +44,21 @@ public class Main {
     }
 }
 
-        ``````JAVA
+````
 
 ## OUTPUT
 
+````
+ENTER THE SIZE
+5
+ENTER THE ELEMENTS
+1
+2
+3
+4
+5
+TARGET
+4
+Element Found At Index   3
+
+````
