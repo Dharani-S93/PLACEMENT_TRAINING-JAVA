@@ -271,6 +271,243 @@ public class Main {
 2
 3
 ```
+
+## PRACTICE PROBLEMS IN ARRAYS
+## Merge Two arrays
+
+````[JAVA]
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        int m = s.nextInt();
+
+        int a[] = new int[n];
+        for (int i = 0; i < n; i++) {
+            a[i] = s.nextInt();
+        }
+
+        int b[] = new int[m];
+        for (int j = 0; j < m; j++) {
+            b[j] = s.nextInt();
+        }
+        int i = 0, j = 0;
+        while (i < n && j < m) {
+            if (a[i] < b[j]) {
+                System.out.println(a[i++]);
+            } else if (a[i] > b[j]) {
+                System.out.println(b[j++]);
+            } else {
+                System.out.println(a[i++]);
+                j++;
+            }
+        }
+        while (i < n) {
+            System.out.println(a[i++]);
+        }
+
+        while (j < m) {
+            System.out.println(b[j++]);
+        }
+    }
+}
+````
+
+## Intersection of two arays
+````java
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        int m = s.nextInt();
+        ArrayList<Integer> list=new ArrayList<>();
+
+        int a[] = new int[n];
+        for (int i = 0; i < n; i++) {
+            a[i] = s.nextInt();
+        }
+
+        int b[] = new int[m];
+        for (int j = 0; j < m; j++) {
+            b[j] = s.nextInt();
+        }
+        int i = 0, j = 0;
+        while (i < n && j < m) {
+            if (a[i] == b[j]) {
+                list.add( a[i]);
+                i++;
+                j++;
+               
+            } 
+            else if (a[i] < b[j]) {
+        
+             i++;
+            } else {
+            
+                j++;
+            }
+        }
+        System.out.println(list);
+        
+    }
+}
+````
+## Output
+3
+3
+1
+2
+3
+3
+4
+5
+[3]
+
+## UNION OF ARRAYS
+````java
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        int m = s.nextInt();
+        TreeSet<Integer> set=new TreeSet<>();
+
+        int a[] = new int[n];
+        for (int i = 0; i < n; i++) {
+            a[i] = s.nextInt();
+        }
+
+        int b[] = new int[m];
+        for (int j = 0; j < m; j++) {
+            b[j] = s.nextInt();
+        }
+        for(int i=0;i<n;i++){
+            set.add(a[i]);
+        }
+        for(int j=0;j<m;j++){
+            set.add(b[j]);
+        }
+        System.out.println(set);
+        
+    }
+}
+````
+
+## OUTPUT
+````
+2
+2
+1
+2
+3
+2
+[1, 2, 3]
+````
+
+## Kth Largest Element
+````java
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        int k= s.nextInt();
+        int a[] = new int[n];
+        for (int i = 0; i < n; i++) {
+            a[i] = s.nextInt();
+        }
+
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+            if(a[i]<a[j]){
+            int temp=a[i];
+            a[i]=a[j];
+            a[j]=temp;
+        }
+            }
+        }
+        for(int i=0;i<n;i++){
+        System.out.println(a[i]);
+        }
+        
+        System.out.println(a[k-1]);
+        
+    }
+}
+````
+
+## Output
+````java
+4
+2
+9
+6
+8
+2
+2
+6
+8
+9
+6
+````
+
+## Kth Smallest Element
+
+````jAVA
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        int k= s.nextInt();
+        int a[] = new int[n];
+        for (int i = 0; i < n; i++) {
+            a[i] = s.nextInt();
+        }
+
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+            if(a[i]<a[j]){ 
+            int temp=a[i];
+            a[i]=a[j];
+            a[j]=temp;
+        }
+            }
+        }
+        for(int i=0;i<n;i++){
+        System.out.println(a[i]);
+        }
+        
+        System.out.println(a[n-k]);
+        
+    }
+}
+````
+
+## Output
+````java
+4 ----no_of_elements
+1 ----target
+2
+6
+7
+3
+2
+3
+6
+7
+7
+````
+
 ## Max and Min
 ````java
 import java.util.*;
