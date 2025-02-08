@@ -62,3 +62,52 @@ TARGET
 Element Found At Index   3
 
 ````
+
+## LINEAR SEARCH
+
+## CODE
+````JAVA
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ENTER THE SIZE");
+        int n = sc.nextInt();
+        System.out.println("ENTER THE ELEMENTS");
+        int a[] = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            a[i] = sc.nextInt();
+        }
+        System.out.println("TARGET");
+        int key=sc.nextInt();
+        for(int i=0;i<n;i++){
+            if(a[i]==key){
+            System.out.println(i);
+            
+        }
+        }
+        }
+    }
+
+
+````
+
+## OUTPUTT
+````
+
+ENTER THE SIZE
+5
+ENTER THE ELEMENTS
+1
+5
+3
+7
+4
+TARGET
+3
+2
+
+````
