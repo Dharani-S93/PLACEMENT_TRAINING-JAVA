@@ -271,4 +271,249 @@ public class Main {
 2
 3
 ```
+## Max and Min
+````java
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.printf("Enter the values");
+		int n=s.nextInt();
+		int m=s.nextInt();
+		int a=((m+n)+Math.abs(m-n))/2;
+		int b=((m+n)-Math.abs(m-n))/2;
+		System.out.println("Max is"  +a);
+		System.out.println("Min is" +b);
+
+	}
+
+}
+
+````
+
+
+
+````java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        int m = s.nextInt();
+        System.out.println(Math.max(n, m));
+        System.out.println(Math.min(n, m));
+    }
+}
+```
+
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.printf("Enter the values");
+		int n=s.nextInt();
+		int a[]=new int[n];
+		for(int i=0;i<n;i++){
+		    a[i]=s.nextInt();
+		}
+		int max=a[0];
+		int min=a[0];
+		for(int i=1;i<n;i++){
+		    if(a[i]<min){
+		        min=a[i];
+		    }
+		    if(a[i]>max){
+		        max=a[i];
+		    }
+		}
+		System.out.println(max);
+		System.out.println(min);
+	}
+
+}
+
+import java.util.*;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.printf("Enter the values");
+		int n=s.nextInt();
+		int a[]=new int[n];
+		for(int i=0;i<n;i++){
+		    a[i]=s.nextInt();
+		}
+		
+		for(int i=0;i<n;i++){
+		    for(int j=0;j<n;j++){
+		    if(a[i]<a[j]){
+		        int temp=a[i];
+		        a[i]=a[j];
+		        a[j]=temp;
+		    }
+		}
+		
+	}
+	//for(int i=0;i<n;i++){
+	    System.out.println(a[0]);
+	    System.out.println(a[n-1]);
+
+
+}
+}
+
+
+import java.util.*;
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.printf("Enter the values");
+		int n=s.nextInt();
+		int a[]=new int[n];
+		for(int i=0;i<n;i++){
+		    a[i]=s.nextInt();
+		}
+		int rev=0;
+		for(int i=n-1;i>=0;i--){
+		    rev +=a[i];
+		    System.out.println(a[i]);
+		}
+		    
+
+}
+}
+
+import java.util.*;
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.printf("Enter the values");
+		int n=s.nextInt();
+		int a[]=new int[n];
+		for(int i=0;i<n;i++){
+		    a[i]=s.nextInt();
+		}
+		 int left = 0, right = n - 1;
+        while (left < right) {
+            int temp = a[left];
+            a[left] = a[right];
+            a[right] = temp;
+            left++;
+            right--;
+        }
+         
+        System.out.println("Reversed array:");
+        for(int i=0;i<n;i++){
+            System.out.println(a[i]);
+
+}
+}
+}
+
+import java.util.*;
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.printf("Enter the values");
+		String str=s.nextLine();
+		//int a[]=new int[n];
+		//for(int i=0;i<n;i++){
+		    //a[i]=s.nextInt();
+		
+		String rev=" ";
+		for(int i=str.length()-1;i>=0;i--){
+		    rev +=str.charAt(i);
+		}
+		    System.out.println(rev);
+		
+}
+}
+
+import java.util.Scanner;
+public class Main{
+public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int n = scanner.nextInt();
+        int fact= 1;
+        while (n > 1) {
+            fact *= n;
+            n--;
+            
+        }
+System.out.println("Factorial of n is: " + fact);
+    }
+}
+
+import java.util.*;
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.printf("Enter the values");
+		int n=s.nextInt();
+		int a[]=new int[n];
+		for(int i=0;i<n;i++){
+		    a[i]=s.nextInt();
+		}
+		int nonZeroIndex = 0;
+
+        for (int i = 0; i < n; i++) {
+            if (a[i] == 0) {
+                int temp = a[i];
+                a[i] = a[nonZeroIndex];
+                a[nonZeroIndex] = temp;
+                nonZeroIndex++;
+            }
+        } 
+        System.out.println("Array after moving zeros: " + Arrays.toString(a));
+}
+}
+
+import java.util.*;
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.printf("Enter the values");
+		int n=s.nextInt();
+		////int a[]=new int[n];
+		//for(int i=0;i<n;i++){
+		    //a[i]=s.nextInt();
+		
+		int temp=n,sum=0,digit=0;
+		while(temp>0){
+		    temp/=10;
+		    digit++;
+		}
+		temp=n;
+		while(temp>0){
+		  int  last=temp%10;
+		  sum +=Math.pow(last,digit);
+		  temp/=10;
+		    
+		}
+		if(sum==n){
+		    System.out.println("yes");
+		}
+		else{
+		    System.out.println("noo");
+		}
+}
+}
+
+
+
+
 
