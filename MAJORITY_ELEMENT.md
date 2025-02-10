@@ -82,4 +82,62 @@ ENTER THE VALUES:
 MAJORITY ELEMENT IS -1
 ````
 
+## Problem Solving - 10.02.2025
 
+Find the kth largest and smallest number in an array
+
+Task 1: Find the kth smallest score
+
+You need to find the 3rd smallest score in this list.
+
+Task 2: Find the kth largest score
+
+You also need to find the 2nd largest score in this list.
+
+You have the following scores recorded for 10 participants:
+
+scores = [65, 89, 45, 72, 54, 91, 32, 77, 60, 82]
+
+## CODE
+`````
+
+import java.util.*;
+public class Main{
+    public static void main (String[] args){
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter n");
+        int n=s.nextInt();
+        System.out.println("enter ks");
+        int ks=s.nextInt();
+        System.out.println("enter kl");
+        int kl=s.nextInt();
+        System.out.println("enter the elements");
+        int a[]=new int [n];
+        for(int i=0;i<n;i++){
+            a[i]=s.nextInt();
+        }
+        Arrays.sort(a);
+        System.out.println("THE THIRD Smallest IS "+a[ks-1]);
+        System.out.println("THE 2ND LARGEST IS  "+a[n-kl]);
+    }
+}
+
+`````
+### OUTPUT
+````
+enter n
+6
+enter ks
+3
+enter kl
+2
+enter the elements
+9
+8
+7
+6
+5
+4
+THE THIRD Smallest IS 6
+THE 2ND LARGEST IS  8
+````
