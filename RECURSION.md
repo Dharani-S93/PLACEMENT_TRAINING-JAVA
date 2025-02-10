@@ -69,3 +69,30 @@ FIBONOCCI
 21
 34
 ````
+
+### SUM OF N NUMBERS
+````
+import java.util.*;
+public class Main {
+
+public static int sum(int n){
+    if(n<=1){
+        return n;
+    }
+    return n+sum(n-1);
+}
+
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ENTER");
+        int n= sc.nextInt();
+        System.out.println("SUM OF N VALUES");
+        for(int i=0;i<n;i++){
+        System.out.println(sum(n));
+        }
+}
+}
+````
+
+### 
