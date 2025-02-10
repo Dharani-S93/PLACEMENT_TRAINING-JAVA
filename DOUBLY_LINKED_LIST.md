@@ -105,7 +105,7 @@ public class DLL{
         link.insertAtBegin(200);
         link.insertAtBegin(300);
         link.insetAtEnd(400);
-       link.insertAtPos(2, 250);
+        link.insertAtPos(2, 250);
         link.display();
 }
 }
