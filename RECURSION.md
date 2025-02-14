@@ -26,10 +26,10 @@ ENTER
 5
 FACTORIAL IS
 120
-````java
+````
 
 ### FIBANOCCI SERIES
-````
+````ja
 import java.util.*;
 public class Main {
 
