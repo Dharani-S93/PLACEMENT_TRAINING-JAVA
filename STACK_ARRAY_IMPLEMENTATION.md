@@ -60,10 +60,11 @@ public class Main {
 }
 ````
 ## OUTPUT
+````
 400-------it is the top most element
-\\
 elements after pop
 400
 300
 200
 100
+````
