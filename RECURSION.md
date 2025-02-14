@@ -71,7 +71,7 @@ FIBONOCCI
 ````
 
 ### SUM OF N NUMBERS
-````
+````java
 import java.util.Scanner;
 
 public class Main {
@@ -93,7 +93,7 @@ public class Main {
 ````
 
 ### REVERSING A NUMBER
-````
+````java
     public class Main{
         static int sum=0;
         public static int reverse(int n){
