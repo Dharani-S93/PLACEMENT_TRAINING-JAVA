@@ -1,5 +1,5 @@
 ### FACTORIAL OF A NUMBER USING RECURION
-````
+````java
 import java.util.*;
 public class Main {
 
@@ -26,7 +26,7 @@ ENTER
 5
 FACTORIAL IS
 120
-````
+````java
 
 ### FIBANOCCI SERIES
 ````
