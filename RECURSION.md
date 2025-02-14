@@ -29,7 +29,7 @@ FACTORIAL IS
 ````
 
 ### FIBANOCCI SERIES
-````ja
+````java
 import java.util.*;
 public class Main {
 
